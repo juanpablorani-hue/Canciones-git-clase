@@ -1,0 +1,86 @@
+Diferencia entre git y github
+GIT
+    Git es una herramienta o software que se instala en el computador, sirve para el control de versiones, es decir llevar un historial de cambios en los archivos y proyectos.
+
+GITHUB 
+    Es una plataforma en la nube que usa GIT como base.
+
+    Permite almacenar repositorios online y compartirlo con otras personas.
+
+    Facilita la colaboración: varios desarrolladores pueden trabajar en el mismo proyecto.
+
+GIT 
+    lOCAL: Configuración para cada repositorio
+    GLOBAL: Configuración para el usuario del computador
+    SYSTEM: Configuración para todos los usuarios
+
+    siempre se le da prioridad al más especifico
+
+CONFIGURACIÓN INICIAL
+1. Acceder a la configuración 
+    git config --local 
+    git config --global 
+    git config --system 
+
+2. Acceder a la configuración correo
+    git config --global user.email "correo-electronico"
+
+3. Para ver la configuración
+    git config --global user.email
+    git config --global user.name
+
+4. Acceder a la configuracion nombre de usuario
+    git config --global user.name "Santiago"
+
+5. Para borrar la informacion de la terminal
+    clear
+
+6. Para ver la lista de configuracion
+    git config --global --list
+
+7. Cuando usamos git y necesitamos un mensaje demconfirmación (commit), podemos configurar para que se abra el editor de codigo visual studio code
+    git config --global core.editor "code --wait"
+
+8. Git puede mostrar mensajes en la terminal con colores, lo que facilita distinguir los mensajes
+    git config --global color.ui true
+
+9. Cada sistema operativo maneja los saltos de linea de manera diferente:
+    -W: usa \r y \n (RETORNO + NUEVA LINEA)
+    - L: usa solo \n (nueva linea)
+
+    -w: git config --global core.autocrlf true
+    -L: git config --global core.autocrlf input
+10. Para eliminar una configuracion
+    git config --global --unset configuracion
+    git config --global --unset user.email
+
+11. PAra borrar toda la configuracion abrimos el ejecutar con "win + r"
+escribimos %userprofile% 
+    eliminar el archivo que se llama .gitconfig
+
+PRIMEROS PASOS
+1. Flujo de git
+    working directory: Carpeta donde guardamos nuestros archivos
+
+    Staging area: Aqui se preparan los archivos modificados antes de guardarlos en el repositorio
+
+    Repositorio: Cuando confirmamos los cambios con git
+
+2. Como movernos en la terminal
+    cd nombre -> Para ingresar a una carpeta
+    cd .. -> Me devuelvo una carpeta
+    ls -> Me muestra lo que hay dentro de la carpeta
+
+3. Iniciar el repositorio
+    git init
+
+4. Después del git init convierte la carpeta en un repositorio git, se crea una carpeta oculta llamada .git donde se guarda la configuracion.
+
+5. Creamos un archivo txt dentro de la carpeta 
+    mkdir nombre -> creamos una carpeta
+    rmdir nombre -> eliminamos una carpeta
+    touch nombre.extencion -> para crear un archivo
+
+6. Para añadir el repositorio al area de trabajo
+    git add nombre.extencion
+    git add . ->añade todos los archivos de la carpeta 
