@@ -132,3 +132,7 @@ Para mostrar el hash mas corto usamos
 19. para ver los cambios que hicimos en cada hash utilizamos:
     - git show y el hash
     - git show 8868e
+
+18. para ver los cambios que se hicieron en cada archivo utilizamos:
+    - git blame y el nombre del archivo
+    - git blame Parche_Tranqui.txt
