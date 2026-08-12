@@ -140,3 +140,26 @@ Para mostrar el hash mas corto usamos
 19. Si nos equivocamos en un commit anterior podemos volver haciendo reset en este caso blando (soft):
     -git reset --soft y el hash
     -git reset --soft Parche_Tranqui.txt
+
+20. Para ver las diferencias entre todos los commits utilizamos:
+    -git diff y el hash del commit
+    -git diff 9b0a3
+
+21. Podemos saltearnos el git add . con:
+    git -a -m "Nota de cambios"
+
+22. Para devolvernos a un commit muy anterior usamos:
+    -git reset --soft HEAD~3 (El numero 3 me dice que me voy a devolver 3 commits)
+    -git reset --soft hash -> una forma mas corta de hacerlo
+
+RAMAS (BRANCH) Y FUSIONES (MERGE)
+1. Para ver las ramas usamos:
+    -git branch
+
+2.  Para crear una nueva rama:
+    -git branch nombre-rama-nueva
+
+3. Para cambiar de rama 
+    -git switch nombre-rama
+sakjsiajisajsjoa
+sasasas
