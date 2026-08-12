@@ -136,3 +136,7 @@ Para mostrar el hash mas corto usamos
 18. para ver los cambios que se hicieron en cada archivo utilizamos:
     - git blame y el nombre del archivo
     - git blame Parche_Tranqui.txt
+
+19. Si nos equivocamos en un commit anterior podemos volver haciendo reset en este caso blando (soft):
+    -git reset --soft y el hash
+    -git reset --soft Parche_Tranqui.txt
