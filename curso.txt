@@ -84,3 +84,43 @@ PRIMEROS PASOS
 6. Para añadir el repositorio al area de trabajo
     git add nombre.extencion
     git add . ->añade todos los archivos de la carpeta 
+    
+7. Ruta para el git bush: 
+c:/users/juan pablo/Desktop/GIT SZ
+
+8. Para escribir en un archivo desde la terminal
+    echo "la propia pampara" > archivo.txt
+
+
+9. Agregar texto al final del documento
+    echo "Nueva linea" >> archivo.txt
+
+10. Para mostrar el contenido del archivo
+    cat archivo.txt
+
+11. Para eliminar un archivo 
+    rm archivo.txt
+
+
+12. Para ver el estado del repositorio
+    git status
+
+13. Para añadir el repositorioal area de trabajo
+    git add nombre.extencion
+Añade todos los archivos de la carpeta
+    git add. 
+
+14. Para recuperar archivos
+    git checkout archivo.txt
+
+15. Para mover un archivo del area de preparacion , usamos  
+    git rm -- cached archivo.txt
+
+16. Para subir todos los archivos al repositorio
+    - git commit
+
+17.Para obtener el hash (id) autor, fecha y mensaje de los commits
+   - git log
+
+Para mostrar el hash mas corto usamos
+    - git log --oneline
