@@ -119,8 +119,16 @@ Añade todos los archivos de la carpeta
 16. Para subir todos los archivos al repositorio
     - git commit
 
-17.Para obtener el hash (id) autor, fecha y mensaje de los commits
+17. Para obtener el hash (id) autor, fecha y mensaje de los commits
    - git log
 
 Para mostrar el hash mas corto usamos
     - git log --oneline
+
+18. Para aumentar o reducir la contidad de caracteres del hash (nombre del commit) usamos: 
+    - git config --global core.abbrev 5 (5 letras)
+    - git config --global core.abbrev 10 (10 letras)
+
+19. para ver los cambios que hicimos en cada hash utilizamos:
+    - git show y el hash
+    - git show 8868e
