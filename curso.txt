@@ -105,7 +105,7 @@ c:/users/juan pablo/Desktop/GIT SZ
 12. Para ver el estado del repositorio
     git status
 
-13. Para añadir el repositorioal area de trabajo
+13. Para añadir el repositorio al area de trabajo
     git add nombre.extencion
 Añade todos los archivos de la carpeta
     git add. 
@@ -140,3 +140,21 @@ Para mostrar el hash mas corto usamos
 19. Si nos equivocamos en un commit anterior podemos volver haciendo reset en este caso blando (soft):
     -git reset --soft y el hash
     -git reset --soft Parche_Tranqui.txt
+
+RAMAS(BRANCHES) Y FUSIONES (MERGE)
+1. Para ver las ramas usamos
+    -git branch 
+
+2. Para crear una rama nueva
+    -git branch nombre-rama
+
+3. Para cambiar de rama
+    -git switch nombre-rama
+
+4. Ver las diferencias 
+    -git diff hash_1 hash_2
+    -git diff --name-only hash_1 hash_2  para ver el nombre de los archivos a los que
+                                         se les hicieron cambios, ya que con el primer git diff
+                                         vamos a ver los cambios que se le hicieron a todos los archivos del repositorio
+5. Para saltar el git add .
+    -git -a -m "Mensaje del commit"
