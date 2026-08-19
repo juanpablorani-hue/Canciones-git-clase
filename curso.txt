@@ -158,3 +158,17 @@ RAMAS(BRANCHES) Y FUSIONES (MERGE)
                                          vamos a ver los cambios que se le hicieron a todos los archivos del repositorio
 5. Para saltar el git add .
     -git -a -m "Mensaje del commit"
+
+6. Para crear una rama y cambiar de inmediato
+    -git switch -c nombre-rama
+
+7. Para eliminar una rama   
+    -git branch -d nombre-rama  #Si se ha combinado
+    -git branch -D nombre-rama  #Si no se ha hecho un MERGE (combinado)
+
+8. Para cambiar el nombre de una rama
+    -git branch -m nombre_rama-nombre_nuevo
+
+9. Para cambiar el nombre de una rama estando en otras 
+    -git branch -m nombre-rama nombre-nuevo
+    
